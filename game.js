@@ -9,7 +9,7 @@ function computerPlay() {
         computersChoice = "Paper";
         return computersChoice;
     } else if (random >= 66.66 && random <= 100) {
-        computersChoice = "Scissors";
+        computersChoice = "Scissor";
         return computersChoice;
     } else {
         console.log("Error, something went wrong!");
@@ -17,10 +17,10 @@ function computerPlay() {
     }
 }
 
-function playSingleRound() {
-    let usersChoice = prompt("Type Rock, Paper or Scissor").toLowerCase();
-    let computersChoice = computerPlay().toLowerCase();
-
+function playRound(usersChoice, computersChoice) {
+    //let usersChoice = prompt("Type Rock, Paper or Scissor").toLowerCase();
+    computersChoice = computerPlay().toLowerCase();
+    usersChoice = usersChoice.toLowerCase();
     console.log(`Users Choice: ${usersChoice} and Computers Choice: ${computersChoice}`);
     
     if (usersChoice == "rock" && computersChoice == "rock" ||
