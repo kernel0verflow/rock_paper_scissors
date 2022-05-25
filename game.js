@@ -26,13 +26,13 @@ function playSingleRound() {
     if (usersChoice == "rock" && computersChoice == "rock" ||
         usersChoice == "scissor" && computersChoice == "scissor" ||
         usersChoice == "paper" && computersChoice == "paper") {
-            console.log("Tie");
+            console.log(`Tie! Computer Choose ${computersChoice.toUpperCase()} and you choose ${usersChoice.toUpperCase()}`);
     } else if (usersChoice == "rock" && computersChoice == "scissor" ||
                 usersChoice == "paper" && computersChoice == "rock" ||
                 usersChoice == "scissor" && computersChoice == "paper") {
-                    console.log("You Won!");
+                    console.log(`You Won! Computer Choose ${computersChoice.toUpperCase()} and you choose ${usersChoice.toUpperCase()}`);
                 } else {
-                    console.log("Computer Won!");
+                    console.log(`You loose! Computer Choose ${computersChoice.toUpperCase()} and you choose ${usersChoice.toUpperCase()}`);
                 }
 
 }
